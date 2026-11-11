@@ -8,6 +8,10 @@ database/backups/
 *.csv
 *.xlsx
 
+# Base anonimizada publicada para la tesis
+!datos/*.csv
+!datos/*.xlsx
+
 # Sistema
 .DS_Store
 Thumbs.db

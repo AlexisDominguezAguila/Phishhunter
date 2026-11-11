@@ -4,7 +4,7 @@
 
 Plataforma web gamificada en **PHP + MySQL** para enseñar la prevención del phishing a estudiantes de secundaria. Es la versión utilizada en la intervención de la tesis *«Gamificación y prevención del phishing en estudiantes de secundaria de una institución rural de Frías, Piura, 2026 (ODS 4)»*, de Alexis José Dominguez Aguila y Randdy Samhir Ojeda Marchan (Universidad Tecnológica del Perú).
 
-> **Datos personales.** Este repositorio contiene solo el código y el contenido educativo (misiones, casos simulados y cuestionarios). No incluye la base de datos de la intervención ni datos de estudiantes. Al instalarlo se crea una base vacía.
+> **Datos personales.** Este repositorio contiene solo el código y el contenido educativo (misiones, casos simulados y cuestionarios). No incluye la base de datos de la intervención ni datos de estudiantes. Al instalarlo se crea una base vacía. La base anonimizada de los resultados de la tesis está en la carpeta [`datos/`](datos/).
 
 ## Base de datos
 
