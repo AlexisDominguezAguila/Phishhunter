@@ -1,0 +1,19 @@
+# PhishHunter · URLs amigables (/refuerzo, /clasificacion, /panel/estudiantes…)
+# Requiere mod_rewrite (en WAMP: clic en el icono > Apache > Módulos > rewrite_module).
+# Si no está activo, la app sigue funcionando con las direcciones «.php».
+
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Si subes la app a una subcarpeta con alias y algo falla, descomenta y ajusta:
+    # RewriteBase /game/
+
+    # Avisa a PHP de que las URLs amigables funcionan
+    RewriteRule ^ - [E=PH_PRETTY:1]
+
+    # Todo lo que no sea un archivo o carpeta real va al enrutador
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ router.php [L,QSA]
+</IfModule>

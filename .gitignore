@@ -1,0 +1,13 @@
+# Instalación local
+config/installed.lock
+
+# Respaldos y exportaciones de la base de datos (pueden contener datos de estudiantes)
+database/backups/
+*.sql
+!database/schema.sql
+*.csv
+*.xlsx
+
+# Sistema
+.DS_Store
+Thumbs.db
